@@ -1,0 +1,11 @@
+
+fastapi
+uvicorn[standard]
+python-multipart
+pymupdf
+python-docx
+scikit-learn
+numpy
+reportlab
+ddgs
+trafilatura
