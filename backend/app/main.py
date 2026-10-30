@@ -6,7 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.database import init_db
 
-
+from app.routes.upload import router as upload_router
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     init_db()
@@ -28,7 +28,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-
+app.include_router(upload_router)
 @app.get("/")
 def home():
     return {
