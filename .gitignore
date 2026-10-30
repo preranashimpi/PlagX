@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+.env
+
+# Frontend
+node_modules/
+dist/
+
+# Database
+*.db
+*.sqlite3
+
+# Uploaded documents and reports
+backend/uploads/
+backend/reports/
+
+# Model cache
+.cache/
